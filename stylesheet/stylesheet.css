@@ -1,0 +1,457 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif, arial;
+    box-sizing: border-box;
+    color: #001836;
+}
+
+a,
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+.display-none {
+    display: none !important;
+}
+
+header.ar-header {
+    position: absolute;
+    height: 70px;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    transition: all 0.2s;
+    background: #fff;
+}
+
+.ar-banner {
+    position: relative;
+    height: 650px;
+    background-image: url(../images/banner.jpg);
+    background-position: 100% top;
+    background-size: cover;
+}
+
+.ar-header__logo {
+    width: 220px;
+    height: 100%;
+    float: left;
+}
+
+.ar-header__logo a {
+    display: block;
+    height: 100%;
+    background-image: url(../images/logo.png);
+    background-size: cover;
+    transition: all 0.2s;
+    background-position: center center;
+}
+
+header.ar-header.secondary {
+    background-color: #fff;
+}
+
+header.ar-header.secondary nav.ar-header__nav a {
+    color: #001836;
+}
+
+header.ar-header.secondary nav.ar-header__nav {
+    margin-top: 22px;
+}
+
+nav.ar-header__nav {
+    float: right;
+    margin-top: 24px;
+    margin-right: 25px;
+    transition: all 0.2s;
+}
+
+nav.ar-header__nav a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 40px;
+    color: #35A0CE;
+}
+
+h2.ar-banner__tagline {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+h3.ar-banner__sub-title {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+nav.ar-banner__nav {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+nav.ar-banner__nav a {
+    height: 9px;
+    width: 9px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    transition: all 0.2s;
+}
+
+nav.ar-banner__nav a.active {
+    background-color: #fff;
+    height: 12px;
+    width: 12px;
+    position: relative;
+    top: 1px;
+}
+
+button.ar-header-button {
+    position: absolute;
+    bottom: 150px;
+    margin: auto;
+    left: 0;
+    right: 0;
+
+}
+
+button.ar-primary-button {
+    width: 150px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+button.ar-primary-button.white {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+button.ar-banner__arrow__nav {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    width: 45px;
+    height: 45px;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    border-left: none;
+    border-bottom: none;
+    transition: all 0.3s;
+}
+
+button.ar-banner__arrow__nav.right {
+    right: 110px;
+    transform: rotate(45deg);
+
+}
+
+button.ar-banner__arrow__nav.left {
+    left: 110px;
+    transform: rotate(-135deg);
+}
+
+h3.ar-about__title {
+    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+p.ar-about__text {
+    width: 1000px;
+    text-align: center;
+    margin: auto;
+    font-size: 16px;
+}
+
+button.ar-primary-button.black {
+    border: 2px solid #001836;
+    display: block;
+    color: #001836;
+    margin: 50px auto 40px;
+}
+
+.ar-layout__container {
+    width: 1100px;
+    margin: auto;
+}
+
+ul.ar-services__list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.ar-services__list__item__icon {
+    height: 120px;
+    width: 120px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.35);
+    position: relative;
+}
+
+.ar-services {
+    background-color: #F2F3F7;
+    padding-bottom: 40px;
+}
+
+li.ar-services__list__item {
+    position: relative;
+    width: 200px;
+    text-align: center;
+}
+
+span.ar-services__list__item__title {
+    font-size: 14px;
+    font-weight: 700;
+    padding-top: 15px;
+    display: inline-block;
+}
+
+.ar-contact__wrapper {
+    height: 250px;
+}
+
+.ar-contact__wrapper:after {
+    content: '';
+    display: table;
+    clear: both;
+    height: 0;
+    opacity: 0;
+}
+
+.ar-contact__address__wrapper {
+    float: left;
+    height: 100%;
+    width: 500px;
+}
+
+.ar-contact__map__wrapper {
+    float: right;
+    height: 100%;
+    width: 500px;
+}
+
+p.ar-contact__address {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+footer.ar-footer {
+    min-width: 100%;
+    height: 50px;
+    background-color: #F2F3F7;
+}
+
+span.ar-footer__copyright {
+    float: left;
+    margin-left: 80px;
+    margin-top: 16px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+nav.ar-footer__nav {
+    float: right;
+    margin-right: 80px;
+    margin-top: 15px;
+}
+
+nav.ar-footer__nav a {
+    margin-left: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+button.ar-primary-button.white:hover {
+    background-color: #fff;
+    color: #001836;
+}
+
+button.ar-primary-button.black:hover {
+    background-color: #001836;
+    color: #fff;
+}
+
+button.ar-banner__arrow__nav:hover {
+    border-color: rgba(255, 255, 255, 0.85);
+}
+
+nav.ar-banner__nav a:hover {
+    background-color: #fff;
+}
+
+.ar-contact {
+    padding-bottom: 40px;
+}
+
+button.ar-booking-button {
+    position: fixed;
+    right: -50px;
+    top: 50%;
+    z-index: 99;
+    border: none;
+    transform: rotate(-90deg);
+    width: 130px;
+    height: 44px;
+    border-radius: 10px 10px 0px 0px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    background-color: #00B4FF;
+    transition: all 0.3s;
+}
+button.ar-booking-button:hover {
+    right: -45px;
+}
+
+nav.ar-header__nav a:hover,
+nav.ar-header__nav a.active {
+    border-bottom: 3px solid;
+}
+
+.ar-booking__popup__wrapper {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background-color: rgba(33, 32, 32, 0.75);
+    z-index: 99;
+    display: none;
+}
+
+.ar-booking__popup {
+    position: absolute;
+    width: 600px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(46, 56, 68, 0.75);
+    height: 430px;
+    top: 0;
+    bottom: 0;
+}
+
+.ar-booking__popup__header {
+    height: 50px;
+    background-color: #00B4FF;
+}
+
+.ar-booking__popup__footer {
+}
+
+.ar-booking__popup__form__row {
+    position: relative;
+    height: 45px;
+    margin: 15px 20px;
+    box-shadow: 0 0 5px 1px rgba(35, 37, 39, 0.3);
+}
+
+span.ar-booking__popup__form__title {
+    position: absolute;
+    height: 100%;
+    width: 100px;
+    background-color: #565B68;
+    color: #A9ABAF;
+    padding: 12px 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+input.ar-booking__popup__form__input__text {
+    width: calc(100% - 100px);
+    height: 100%;
+    border: none;
+    background-color: #6C727F;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.ar-booking__popup__form {
+    margin: 10px 0 15px;
+}
+
+span.ar-booking__popup__header__title {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 11px 15px;
+    display: inline-block;
+    color: #fff;
+}
+
+.ar-booking__popup__form__row {
+}
+
+.ar-booking__popup__form__row-secondary {
+    position: relative;
+    height: 45px;
+    margin: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    outline: none;
+}
+
+.ar-booking__popup__form__row-secondary__row {
+    width: calc(100% * 1/2 - 10px);
+    position: relative;
+}
+
+.ar-booking__popup__footer__button {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    height: 50px;
+    border: none;
+    background-color: #00B4FF;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.ar-services__list__item__icon span:before {
+    font-size: 60px;
+    position: absolute;
+    top: 25px;
+    left: 10px;
+}
+
+.ar-contact__map {
+    width: 100%;
+    height: 100%;
+}
