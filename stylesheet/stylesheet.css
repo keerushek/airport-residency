@@ -43,7 +43,7 @@ header.ar-header {
 .ar-header__logo a {
     display: block;
     height: 100%;
-    background-image: url(../images/logo.png);
+    background-image: url(../images/logo.PNG);
     background-size: cover;
     transition: all 0.2s;
     background-position: center center;
