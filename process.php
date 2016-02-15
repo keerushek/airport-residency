@@ -37,7 +37,23 @@ $data 			= array(); 		// array to pass back data
 		$data['success'] = false;
 		$data['errors']  = $errors;
 	} else {
+ $smtpoptions = array(
+                        "headers" => GetEmailUserAgent("Thunderbird"),
+                        "textmessage" => $message,
+                        "server" => $smtpserver,
+                        "port" => $smtpport,
+                        "secure" => $reportinfo["smtpsecure"],
+                        "username" => $reportinfo["guna@airportgg.com"],
+                        "password" => $reportinfo["navaneet1947"],
+                        "usedns" => false
+                    );
+...
 
+                        $result = SendEmail("keerushek@gmail.com", "keerthi.shekar@razorthink.com", "Testing", $smtpoptions);
+                        if (!$result["success"])
+                        {
+...I'd make a POP3 connection here and then retry the SMTP stuff - some hosts do POP before SMTP...
+                        }
 		// if there are no errors process our form, then return a message
 
 		// DO ALL YOUR FORM PROCESSING HERE
@@ -49,7 +65,7 @@ $data 			= array(); 		// array to pass back data
 		//$txt = "From: " . $_POST['name'] ."\nEmail: ". $_POST['email']."\nMobile: ". $_POST['mobile']."\nFrom Date: ". $_POST['fromDate']."\nTo Date: ". $_POST['toDate']."\nGuests: ". $_POST['guests']."\nRooms: ". $_POST['rooms'];
 		//$headers = "From: " . $_POST['name'];
 		//$sendMail = mail($to, $subject, $txt, $headers);
-mail($email_to='guna@airportgg.com', $email_subject='test', $email_message='test message');
+//mail($email_to='guna@airportgg.com', $email_subject='test', $email_message='test message');
 		//if ($sendMail){
 		  //$data['success'] = true;
 		  //$data['message'] = 'Success!';
