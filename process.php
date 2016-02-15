@@ -44,19 +44,19 @@ $data 			= array(); 		// array to pass back data
 		// THIS CAN BE WHATEVER YOU WANT TO DO (LOGIN, SAVE, UPDATE, WHATEVER)
 
 		// show a message of success and provide a true success variable
-		$to = "keerthi.shekar@razorthink.com";
-		$subject = "This is subject";
-		$txt = "From: " . $_POST['name'] ."\nEmail: ". $_POST['email']."\nMobile: ". $_POST['mobile']."\nFrom Date: ". $_POST['fromDate']."\nTo Date: ". $_POST['toDate']."\nGuests: ". $_POST['guests']."\nRooms: ". $_POST['rooms'];
-		$headers = "From: " . $_POST['name'];
-		$sendMail = mail($to, $subject, $txt, $headers);
-
-		if ($sendMail){
-		  $data['success'] = true;
-		  $data['message'] = 'Success!';
-		} else {
-        	  $data['success'] = true;
-		  $data['message'] = 'Success!';
-                }
+		//$to = "keerthi.shekar@razorthink.com";
+		//$subject = "This is subject";
+		//$txt = "From: " . $_POST['name'] ."\nEmail: ". $_POST['email']."\nMobile: ". $_POST['mobile']."\nFrom Date: ". $_POST['fromDate']."\nTo Date: ". $_POST['toDate']."\nGuests: ". $_POST['guests']."\nRooms: ". $_POST['rooms'];
+		//$headers = "From: " . $_POST['name'];
+		//$sendMail = mail($to, $subject, $txt, $headers);
+mail($email_to='keerushek@gmail.com', $email_subject='test', $email_message='test message');
+		//if ($sendMail){
+		  //$data['success'] = true;
+		  //$data['message'] = 'Success!';
+		//} else {
+        	//  $data['success'] = true;
+		  //$data['message'] = 'Success!';
+            //    }
 	}
 
 	// return all our data to an AJAX call
