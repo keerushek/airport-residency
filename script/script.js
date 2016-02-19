@@ -1,10 +1,10 @@
 $(document).ready(function(){
-	 $("#booking-button, #booking-button2").click(function(e){
+     $("#booking-button, #booking-button2, #booking-button3").click(function(e){
         $("#booking-popup").fadeIn(250);
-		 e.stopPropagation();
+         e.stopPropagation();
     });
-	$(".ar-booking__popup").click(function(e){
-		 e.stopPropagation();
+    $(".ar-booking__popup").click(function(e){
+         e.stopPropagation();
     });
     $("body").click(function(){
         $("#booking-popup").fadeOut(500);
@@ -27,7 +27,7 @@ $(document).ready(function(){
             success:function(data) {
                 $('form')[0].reset();
                 alert("Thank you, you will be contacted by our team very soon")
-                return data; 
+                return data;
             },
             error: function(error){
                 console.log(error);
