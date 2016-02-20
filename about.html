@@ -23,10 +23,10 @@
                 </div>
 
                 <nav class="ar-header__nav">
-                    <a class="active" href="index.html">HOME</a>
-                    <a href="about.html">ABOUT</a>
+                    <a href="index.html">HOME</a>
+                    <a class="active" href="about.html">ABOUT</a>
                     <a href="index.html#ar-services__block">FACILITIES</a>
-                    <a href="tarrif.html">TARIFF</a>
+                    <a href="tariff.html">TARIFF</a>
                     <a href="index.html#ar-contact__block">CONTACT US</a>
                 </nav>
 
@@ -35,15 +35,67 @@
             <button class="ar-booking-button" id="booking-button">
                 BOOK NOW
             </button>
-
+			<div class="ar-booking__popup__wrapper" id="booking-popup">
+                <div class="ar-booking__popup">
+                    <form onsubmit="submitform();">
+                        <div class="ar-booking__popup__header">
+                            <span class="ar-booking__popup__header__title">BOOKING</span>
+                        </div>
+                        <div class="ar-booking__popup__form">
+                            <div class="ar-booking__popup__form__row">
+                                <span class="ar-booking__popup__form__title">Name</span>
+                                <input name="name" type="text" class="ar-booking__popup__form__input__text" placeholder="Jhon Doe" required>
+                            </div>
+                            <div class="ar-booking__popup__form__row">
+                                <span class="ar-booking__popup__form__title">Email</span>
+                                <input name="email" type="email" class="ar-booking__popup__form__input__text" placeholder="jhondoe@example.com" required>
+                            </div>
+                            <div class="ar-booking__popup__form__row">
+                                <span class="ar-booking__popup__form__title">Mobile</span>
+                                <input name="mobile" type="text" class="ar-booking__popup__form__input__text" placeholder="9900 123 123" required>
+                            </div>
+                            <div class="ar-booking__popup__form__row-secondary">
+                                <div class="ar-booking__popup__form__row-secondary__row">
+                                    <span class="ar-booking__popup__form__title">Check In</span>
+                                    <input name="fromDate" type="date" class="ar-booking__popup__form__input__text" placeholder="13/7/2015" required>
+                                </div>
+                                <div class="ar-booking__popup__form__row-secondary__row">
+                                    <span class="ar-booking__popup__form__title">Check Out</span>
+                                    <input name="toDate" type="date" class="ar-booking__popup__form__input__text" placeholder="15/7/2015" required>
+                                </div>
+                            </div>
+                            <div class="ar-booking__popup__form__row-secondary">
+                                <div class="ar-booking__popup__form__row-secondary__row">
+                                    <span class="ar-booking__popup__form__title">Guests</span>
+                                    <input name="guests" type="text" class="ar-booking__popup__form__input__text" placeholder="5" required>
+                                </div>
+                                <div class="ar-booking__popup__form__row-secondary__row">
+                                    <span class="ar-booking__popup__form__title">Rooms</span>
+                                    <input name="rooms" type="text" class="ar-booking__popup__form__input__text" placeholder="2" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ar-booking__popup__footer">
+                            <input name="submit" class="ar-booking__popup__footer__button" value="Submit" type="submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
             <div class="ar-about ar-push__header-height">
 
                 <div class="ar-layout__container">
 
                     <h3 class="ar-about__title">WELCOME TO Airport Geetha Gardenia</h3>
-
-                    <p class="ar-about__text">
-                         FIRST SERVICE APARTMENT-CUM- HOTEL PROPERTY FROM BANGALORE INTERNATIONAL AIRPORT. JUST 2 KMs AND JUST OUTSIDE BANGALORE INTERNATIONAL AIRPORT (NEARBY TO THE COMPOUND WALL). 5 MINUTES JOURNEY FROM BANGALORE INTERNATIONAL AIRPORT. NEAREST SERVICE APARTMENT  HOTEL FROM BANGALORE INTERNATIONAL AIRPORT. HAVE SHARED COMPLEMENTARY TAXI SERVICES TO BANGALORE INTERNATIONAL AIRPORT. CLOSE BY TO DEVANAHALLI BUSINESS PARK,  IT / BT PARKS &amp; HARDWARE SEZ PARKS   / AEROSPACE PARKS / GLOBAL FINANCIAL DISTRICT. CLOSE BY TO BE BUILD - BANGALORE INTERNATIONAL CONVENTION CENTER
+					<ul class="ar-about__text">
+						<li>FIRST SERVICE APARTMENT-CUM- HOTEL PROPERTY FROM BANGALORE INTERNATIONAL AIRPORT.</li>
+						<li>JUST 2 KMs AND JUST OUTSIDE BANGALORE INTERNATIONAL AIRPORT (NEARBY TO THE COMPOUND WALL).</li>
+						<li>5 MINUTES JOURNEY FROM BANGALORE INTERNATIONAL AIRPORT.</li>
+						<li>NEAREST SERVICE APARTMENT  HOTEL FROM BANGALORE INTERNATIONAL AIRPORT.</li>
+						<li>HAVE SHARED COMPLEMENTARY TAXI SERVICES TO BANGALORE INTERNATIONAL AIRPORT.</li>
+						<li> CLOSE BY TO DEVANAHALLI BUSINESS PARK,  IT / BT PARKS &amp; HARDWARE SEZ PARKS   / AEROSPACE PARKS / GLOBAL FINANCIAL DISTRICT. CLOSE BY TO BE BUILD - BANGALORE INTERNATIONAL CONVENTION CENTER</li>
+					</ul>
+                    <p class="">
+                            
                     </p>
 
                 </div>
@@ -54,11 +106,11 @@
                 &copy; 2015 Airport Geetha Gardenia
             </span>
                 <nav class="ar-footer__nav">
-                    <a href="">HOME</a>
-                    <a href="">ABOUT</a>
-                    <a href="">SERVICES</a>
-                    <a href="">TARIFF</a>
-                    <a href="">CONTACT US</a>
+                     <a href="index.html">HOME</a>
+                    <a class="active" href="about.html">ABOUT</a>
+                    <a href="index.html#ar-services__block">FACILITIES</a>
+                    <a href="tariff.html">TARIFF</a>
+                    <a href="index.html#ar-contact__block">CONTACT US</a>
                 </nav>
             </footer>
 

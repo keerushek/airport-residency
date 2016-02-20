@@ -493,7 +493,7 @@ button {
 
 .ar-tarrif-section {
     background: #EEEEF1;
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 .ar-tarrif-container {
@@ -507,7 +507,7 @@ button {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .ar-tarrif__card {
