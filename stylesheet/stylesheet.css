@@ -254,6 +254,14 @@ li.ar-services__list__item {
     text-align: center;
 }
 
+ul.ar-services__list.two-cell {
+    justify-content: center;
+}
+
+ul.ar-services__list.two-cell li.ar-services__list__item {
+    margin: 0 90px;
+}
+
 span.ar-services__list__item__title {
     font-size: 14px;
     font-weight: 700;
