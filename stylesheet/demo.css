@@ -1,0 +1,56 @@
+.gallery.rr-gallary {
+    padding-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery.rr-gallary a {
+    width: calc(100% / 3);
+    height: 300px;
+    cursor: pointer;
+}
+
+/* line 16, ../sass/demo.scss */
+.clear {
+  clear: both;
+  float: none;
+  width: 100%;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 0 5px;
+}
+
+.container .gallery a img {
+  float: left;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  -webkit-transition: -webkit-transform .15s ease;
+  -moz-transition: -moz-transform .15s ease;
+  -o-transition: -o-transform .15s ease;
+  -ms-transition: -ms-transform .15s ease;
+  transition: transform .15s ease;
+  position: relative;
+}
+
+.container .gallery a:hover img {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  z-index: 5;
+}
+
+.container .gallery a.big img {
+  /* width: 40%; */
+}
+
+
+.align-center {
+  text-align: center;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Airport Geetha Gardenia</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="stylesheet/stylesheet.css">
+    <link rel="stylesheet" href="flaticon/flaticon.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="script/script.js"></script>
+
+    <link href='stylesheet/simplelightbox.min.css' rel='stylesheet' type='text/css'>
+    <link href='stylesheet/demo.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="ar-page__wrapper">
+
+        <header class="ar-header">
+
+            <div class="ar-header__logo">
+                <a href="#"></a>
+            </div>
+
+            <nav class="ar-header__nav">
+                <a href="#">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="index.html#ar-services__block">FACILITIES</a>
+                <a class="active" href="gallery.html">GALLERY</a>
+                <a href="tarrif.html">TARIFF</a>
+                <a href="index.html#ar-contact__block">CONTACT US</a>
+            </nav>
+
+        </header>
+
+        <button class="ar-booking-button" id="booking-button">
+            BOOK NOW
+        </button>
+
+        <div class="container">
+            <div class="gallery rr-gallary">
+                <a href="images/gallery/img1.jpg"><img src="images/gallery/img1.jpg" alt=""></a>
+                <a href="images/gallery/img2.jpg"><img src="images/gallery/img2.jpg" alt=""></a>
+                <a href="images/gallery/img3.jpg"><img src="images/gallery/img3.jpg" alt=""></a>
+                <a href="images/gallery/img4.jpeg"><img src="images/gallery/img4.jpeg" alt=""></a>
+                <a href="images/gallery/img5.jpeg"><img src="images/gallery/img5.jpeg" alt=""></a>
+                <a href="images/gallery/img6.jpeg"><img src="images/gallery/img6.jpeg" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script/simple-lightbox.js"></script>
+    <script>
+        $(function () {
+            var gallery = $('.gallery a').simpleLightbox();
+        });
+    </script>
+</body>
+</html>
