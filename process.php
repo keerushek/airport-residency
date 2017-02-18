@@ -44,7 +44,7 @@ $data 			= array(); 		// array to pass back data
 		// THIS CAN BE WHATEVER YOU WANT TO DO (LOGIN, SAVE, UPDATE, WHATEVER)
 
 		// show a message of success and provide a true success variable
-		$to = "guna@airportgg.com,airportgeethagardenia@gmail.com";
+		$to = "guna@airportgg.com,airportgeethagardenia@gmail.com,sekar@airport-residency.com”;
 		$subject = "Booking Request";
 		$txt = "From: " . $_POST['name'] ."\nEmail: ". $_POST['email']."\nMobile: ". $_POST['mobile']."\nFrom Date: ". $_POST['fromDate']."\nTo Date: ". $_POST['toDate']."\nGuests: ". $_POST['guests']."\nRooms: ". $_POST['rooms'];
 		$headers = "From: " . $_POST['email'];
